@@ -1,0 +1,99 @@
+
+/* Add all the propery - value in the CSS3 style which can applied to all selectors  */ 
+* {
+    box-sizing: border-box;
+}
+
+/* Base Styles for all devices */ 
+
+body {
+    background: #fff;
+    box-sizing: border-box;
+    font-family: raleway, roboto, ransita, sans-serif; 
+    font-size: 200%;
+    margin: 0;
+}
+
+/*  Header element selector, so that is centered and bold 
+    with the margin of 30px 0 50px 0 */ 
+h1 {
+   text-align: center;
+   font-weight: bold;
+   margin: 30px 0 50px 0;
+}
+
+/*  Container is the main box which displays the menu and header */ 
+#container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0px;
+    padding: 10px;
+}
+
+/*  Box that contains all the menu item listed in the display */ 
+
+.menu {
+    float:left;
+    width:30%;
+    margin: 10px;
+    background: grey;
+    border: 1px solid #000; 
+    font-size: .75em;
+    position: relative;
+}
+
+/*  Uses the div element, combined with food-type element.  This box 
+    is for displaying - chicken, beef etc */ 
+
+div.food-type {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    width: 40%; 
+    float: right;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+/*  Specific background overlayed on grayed background for the food-type box */ 
+div.chicken {
+    background: pink;
+}
+
+div.beef {
+    background: red;
+    /* So that the letters are white in red background */ 
+    color: #fff; 
+}
+
+div.sushi {
+    background: yellow;
+}
+
+/* Description of the menu items in the box, styles added */ 
+
+p {
+    color: #fff;
+    padding: 10px;
+    font-size: .75em;
+    clear: right;
+}
+
+/*  Media queries for different type of devices 
+    This one is for desktop */ 
+
+@media all and (min-width: 992px) { 
+      .menu {width: calc( (100% - 60px) / 3 ); } 
+}
+
+/* Medium size devices, will display two columns and third 
+   column  in a separate row. */ 
+@media all and (min-width: 768px) and (max-width: 991px) { 
+    #dev-col1.menu {width: calc( (100% - 40px) / 2 );} 
+    #dev-col2.menu {width: calc( (100% - 40px) / 2 );}
+    #dev-col3.menu {width: calc(100% - 20px);}
+}
+
+/* MObile devices */ 
+@media all and (max-width: 767px) { 
+      .menu {width: calc(100% - 20px);}
