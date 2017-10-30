@@ -1,1 +1,61 @@
+/** HEADER **/
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: raleway, roboto, ransita, sans-serif; 
+    font-size: 200%;
+    margin: 0;
+}
+
+.navbar-brand a { 
+   color: white; /* #222; */ 
+   font-size: 1.5em; 
+   font-weight: bold; 
+   margin-top: 0; 
+   margin-bottom: 0; 
+   line-height: 1;  
+} 
+
+#header-nav { 
+  border-radius:0;
+  border: 0;
+}
+
+#nav-list{
+  margin-top: 10px;
+}
+
+#nav-list a{
+  background-color: white; 
+  color: black;
+  text-align: center
+}
+
+#nav-list a:hover{
+  color: white;
+}
+#header{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.card-header{
+  text-align: center; 
+}
+
+.card{
+  background-color: #951C49;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.foodtype { 
+background-color: gray; 
+}
+
+.h3 { 
+text-align: center; }
